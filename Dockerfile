@@ -7,4 +7,4 @@ EXPOSE 3001
 RUN chown -R nodes \
 /usr/src/app
 USER node
-CMD ["npm", "start"]
+CMD [npm, "start]
