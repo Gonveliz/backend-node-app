@@ -17,19 +17,6 @@ This repository contains source code for a basic `to-do` CRUD (Create, Read, Upd
    └── test
 ```
 
-## Dockerfile
-```
-FROM node:14-alpine
-WORKDIR /usr/src/app
-COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
-RUN npm install 
-COPY . .
-EXPOSE 3001
-RUN chown -R node /usr/src/app
-USER node
-CMD ["npm", "start"]
-```
-
 ## Run Application with Docker
 Run the following commands in your terminal to build the image, start a container and test the application.
 ```
